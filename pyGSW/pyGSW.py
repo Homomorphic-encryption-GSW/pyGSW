@@ -1,5 +1,4 @@
-# from pyGSW import pyGSW
-from pyGSW.utils import Prime, MatrixUtils, status
+from utils import Prime, MatrixUtils, status
 
 import math
 import numpy as np
@@ -281,18 +280,3 @@ class HomomorphicOperations(object):
         ca_x_cb = np.dot(ciphertext_1, matrix) % params.q
 
         return ca_x_cb
-
-
-if __name__ == "__main__":
-    """Encryption and decryption example"""
-
-    keys = GSWKeys(STANDARD_SECURITY_VALUE)
-    print("GSW parameters: \n", keys.params)
-    print("GSW public key: \n", keys.public_key)
-    print("GSW secret key: \n", keys.secret_key)
-
-    print("Do some encryption")
-    print("Encrypting message = 100")
-    enc = keys.public_key.Encrypt(keys.params, 100)
-    print("Decrypted message:")
-    print(keys.secret_key.Decrypt(keys.params, enc))
