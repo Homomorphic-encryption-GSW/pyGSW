@@ -12,6 +12,7 @@ setup(
     author_email="artem.mironenko1998@mail.ru",
     description="FHE GSW",
     long_description=readme,
+    long_description_content_type='text/markdown',
 
     url="https://github.com/Homomorphic-encryption-GSW/pyGSW/",
 
