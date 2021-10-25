@@ -275,7 +275,7 @@ class HomomorphicOperations(object):
         :rtype: np.array
         """
 
-        gadget = MatrixUtils.buildGadget(params.l, params.n)
+        gadget = MatrixUtils.buildGadget(params)
         matrix = MatrixUtils.BitDecompMatrix(params, ciphertext_2.T)
 
         ca_x_cb = np.dot(ciphertext_1, matrix) % params.q
@@ -286,7 +286,7 @@ class HomomorphicOperations(object):
 if __name__ == "__main__":
     """Encryption and decryption example"""
 
-    keys = GSWKeys()
+    keys = GSWKeys(STANDARD_SECURITY_VALUE)
     print("GSW parameters: \n", keys.params)
     print("GSW public key: \n", keys.public_key)
     print("GSW secret key: \n", keys.secret_key)
