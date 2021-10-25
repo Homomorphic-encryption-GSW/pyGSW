@@ -15,4 +15,4 @@ This GSW scheme implements:
 
 ## How to use?
 
-File [`example.py`](https://github.com/Homomorphic-encryption-GSW/pyGSW/blob/main/pyGSW/examples.py) contain code examples for encryption\decryption and homomorphic add operation.
+File `example.py` contain code examples for encryption\decryption and homomorphic add operation.
