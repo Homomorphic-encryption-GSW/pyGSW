@@ -1,5 +1,5 @@
-from pyGSW import GSWKeys
-from pyGSW import HomomorphicOperations
+from pyGSW.GSW import GSWKeys
+from pyGSW.GSW import HomomorphicOperations
 
 from random import randint
 

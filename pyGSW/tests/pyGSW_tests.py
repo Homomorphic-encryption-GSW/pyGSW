@@ -1,6 +1,6 @@
 from pyGSW.utils import MatrixUtils
-from pyGSW.pyGSW import GSWParams, GSWPublicKey, GSWSecretKey, GSWKeys
-from pyGSW.pyGSW import HomomorphicOperations
+from pyGSW.GSW import GSWParams, GSWPublicKey, GSWSecretKey, GSWKeys
+from pyGSW.GSW import HomomorphicOperations
 
 import numpy as np
 
@@ -177,7 +177,6 @@ class HomomorphicOperationTest(TestCase):
             ct_constmult = HomomorphicOperations.ConstMult(params, ct, message[1])
 
             ct_mult_dec = sk.Decrypt(params, ct_constmult)
-            print(ct_mult_dec)
 
             test_results.append(pt_mult == ct_mult_dec)
 

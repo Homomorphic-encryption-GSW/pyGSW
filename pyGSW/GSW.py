@@ -1,4 +1,4 @@
-from utils import Prime, MatrixUtils, status
+from pyGSW.utils import Prime, MatrixUtils, status
 
 import math
 import numpy as np
